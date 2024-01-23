@@ -1,5 +1,4 @@
 const qrcode = require('qrcode-terminal');
-
 const { Client } = require('whatsapp-web.js');
 const { MessageMedia } = require('whatsapp-web.js');
 
@@ -33,22 +32,22 @@ client.on('message', async (message) => {
 
 message.reply(resposta+listaMaterial);
 
-client.on('message', async (message) => {
-  
-  if (message.body === '1'){
-  client.sendMessage(message.from,'Sucesso');
-  }
-
-  client.on('message', async (msg) => {
-    if (msg.body === '5') {
-        const media = MessageMedia.fromUrl('https://via.placeholder.com/350x150.png');
-        await client.sendMessage(msg.from, media);
-    }
-});
-
-});
-
 }
+    
+    if (message.body === '1'){
+    client.sendMessage(message.from,'Sucesso');
+    }
+
+    if (message.body === '5') {
+       const piso = `Explore nossa seleção premium de materiais de piso para transformar seus espaços. 
+Abra a imagem abaixo para visualizar a lista completa e escolha os melhores para o seu projeto.
+Qualidade e estilo que fazem a diferença! 💼✨`;
+
+        await client.sendMessage(message.from, piso);
+
+        const media = MessageMedia.fromFilePath('C:\\ProjetosNode\\Imagens\\piso.jpg');
+        await client.sendMessage(message.from, media);
+    }
 });
 
 client.initialize();
