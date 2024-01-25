@@ -31,22 +31,24 @@ client.on('message', async (message) => {
 1️⃣1️⃣ Material Caixa de Portas 🪟`;
 
 message.reply(resposta+listaMaterial);
+    }
 
-}
+if  (message.body === '1'){
+    const quantitativoHidraulico = 'Veja abaixo a imagem do material quantitativo hidráulico:';
+            await client.sendMessage(message.from, quantitativoHidraulico);
     
-    if (message.body === '1'){
-    client.sendMessage(message.from,'Sucesso');
+            const media1 = MessageMedia.fromFilePath('C:\\ProjetosNode\\WhatsAppBot\\NbEngenharia\\Imagens\\1_QuantitativoHidraulico.pdf');
+            await client.sendMessage(message.from, media1);
     }
 
     if (message.body === '5') {
        const piso = `Explore nossa seleção premium de materiais de piso para transformar seus espaços. 
 Abra a imagem abaixo para visualizar a lista completa e escolha os melhores para o seu projeto.
 Qualidade e estilo que fazem a diferença! 💼✨`;
-
         await client.sendMessage(message.from, piso);
 
-        const media = MessageMedia.fromFilePath('C:\\ProjetosNode\\Imagens\\piso.jpg');
-        await client.sendMessage(message.from, media);
+        const media5 = MessageMedia.fromFilePath('C:\\ProjetosNode\\WhatsAppBot\\NbEngenharia\\Imagens\\piso.jpg');
+        await client.sendMessage(message.from, media5);
     }
 });
 
