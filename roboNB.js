@@ -52,4 +52,6 @@ Qualidade e estilo que fazem a diferença! 💼✨`;
     }
 });
 
+alert("Commit de teste")
+
 client.initialize();
