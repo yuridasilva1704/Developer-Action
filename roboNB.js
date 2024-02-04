@@ -153,7 +153,7 @@ client.on('message', async (message) => {
     }
 
     if (message.body === '2') {
-        const piso = Em atualização, breve esta função estará funcionando 😉;
+        const piso = 'Em atualização, breve esta função estará funcionando 😉';
         await client.sendMessage(message.from, piso);
 
     }
@@ -327,12 +327,12 @@ client.on('message', async (message) => {
 
     }
     if (message.body === '10') {
-        const piso = Em atualização, breve esta função estará funcionando 😉;
+        const piso = 'Em atualização, breve esta função estará funcionando 😉';
         await client.sendMessage(message.from, piso);
     }
 
     if (message.body === '11') {
-        const piso = Em atualização, breve esta função estará funcionando 😉;
+        const piso = 'Em atualização, breve esta função estará funcionando 😉';
         await client.sendMessage(message.from, piso);
 
 
@@ -417,16 +417,16 @@ client.on('message', async (message) => {
     }
 
     if (message.body === '17') {
-        const piso = Em atualização, breve esta função estará funcionando 😉;
+        const piso = 'Em atualização, breve esta função estará funcionando 😉';
         await client.sendMessage(message.from, piso);
     }
 
     if (message.body === '18') {
-        const piso = Em atualização, breve esta função estará funcionando 😉;
+        const piso = 'Em atualização, breve esta função estará funcionando 😉';
         await client.sendMessage(message.from, piso);
     }
     if (message.body === '19') {
-        const piso = Em atualização, breve esta função estará funcionando 😉;
+        const piso = 'Em atualização, breve esta função estará funcionando 😉';
         await client.sendMessage(message.from, piso);
     }
 
