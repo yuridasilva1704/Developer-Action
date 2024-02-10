@@ -432,9 +432,6 @@ client.on('message', async (message) => {
                 await client.sendMessage(message.from, mensagemPadrao);
         }
     } else {
-        // Usuário ainda não fez a saudação
-        const mensagemInicial = 'Olá! Para iniciar seu atendimento automatizado, digite "oiii".';
-        await client.sendMessage(message.from, mensagemInicial);
         }
 });
 
