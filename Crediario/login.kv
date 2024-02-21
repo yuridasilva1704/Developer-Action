@@ -1,0 +1,21 @@
+Screen:
+    MDCard:
+        size_hint: None, None
+        size: 300, 400
+        pos_hint: {"center_x":0.5, "center_y":0.5}
+        elevation: 20
+        orientation: "vertical"
+        padding: 15
+        spacing: 15
+        MDLabel:
+            id: label
+            text: "Login"
+            font_size: 30
+            halingn: "center"
+            size_hint_y: None
+            height: self.texture_size[1]
+            padding_y:5
+        MDTextField:
+            hint_text: "Digite seu login"
+            id: login
+            icon_right: "account"
